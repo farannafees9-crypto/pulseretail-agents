@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PulseRetail Agentic Organisation - CEAI Submission</title>
+<style>
+  @page {
+    margin: 2.5cm 2cm;
+    size: A4;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Times New Roman', Georgia, serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 50px;
+  }
+  h1 {
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 5pt;
+    color: #0a0a0a;
+  }
+  h2 {
+    font-size: 14pt;
+    text-align: center;
+    margin-bottom: 15pt;
+    color: #333;
+    font-weight: normal;
+  }
+  .header-info {
+    text-align: center;
+    font-size: 10pt;
+    color: #555;
+    margin-bottom: 25pt;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 15pt;
+  }
+  h3 {
+    font-size: 13pt;
+    margin-top: 20pt;
+    margin-bottom: 8pt;
+    color: #1a1a1a;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 4pt;
+  }
+  h4 {
+    font-size: 11pt;
+    margin-top: 12pt;
+    margin-bottom: 5pt;
+    color: #333;
+  }
+  p {
+    margin-bottom: 8pt;
+    text-align: justify;
+  }
+  ul, ol {
+    margin-left: 20pt;
+    margin-bottom: 8pt;
+  }
+  li {
+    margin-bottom: 4pt;
+  }
+  strong {
+    color: #000;
+  }
+  code {
+    background: #f5f5f5;
+    padding: 2px 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 9pt;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: block;
+    margin: 8pt 0;
+    white-space: pre-wrap;
+  }
+  pre {
+    background: #f8f8f8;
+    padding: 10pt;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin: 10pt 0;
+    font-size: 9pt;
+    white-space: pre-wrap;
+    overflow-x: auto;
+  }
+  .prompt-block {
+    background: #f9f9f9;
+    border-left: 3px solid #333;
+    padding: 10pt 15pt;
+    margin: 10pt 0;
+    font-family: 'Courier New', monospace;
+    font-size: 9pt;
+    white-space: pre-wrap;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8pt;
+    text-align: left;
+  }
+  th {
+    background: #f5f5f5;
+    font-weight: bold;
+  }
+  .center {
+    text-align: center;
+  }
+  .separator {
+    border-top: 2px solid #333;
+    margin: 25pt 0;
+  }
+  .footer-info {
+    margin-top: 30pt;
+    padding-top: 15pt;
+    border-top: 1px solid #ccc;
+    font-size: 9pt;
+    color: #666;
+  }
+  a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+
+<h1>PulseRetail Agentic Organisation</h1>
+<h2>CEAI Final Project Submission</h2>
+
+<div class="header-info">
+<strong>Student:</strong> Farhan Nafees<br>
+<strong>Module:</strong> H9CEAI - Customer Engagement and Artificial Intelligence<br>
+<strong>Lecturer:</strong> Victor del Rosal<br>
+<strong>Institution:</strong> National College of Ireland - 2026
+</div>
+
+<h3>1. Your Organisation</h3>
+
+<h4>Business Choice: PulseRetail</h4>
+
+<p><strong>PulseRetail</strong> is an Irish sustainable activewear brand founded in 2022. The business challenge selected is the <strong>customer re-engagement crisis</strong>: only 18% of first-time buyers make a second purchase within 6 months, compared to a 35% industry benchmark.</p>
+
+<h4>Why This Challenge Benefits from an Agentic Approach</h4>
+
+<p>This problem requires multiple specialized perspectives simultaneously:</p>
+
+<ol>
+  <li><strong>Data Analysis:</strong> Understanding customer behavior patterns requires deep analytical research</li>
+  <li><strong>Creative Design:</strong> Re-engaging customers demands innovative, human-centered solutions</li>
+  <li><strong>Technical Implementation:</strong> Building a scalable solution requires rapid prototyping</li>
+  <li><strong>Marketing Strategy:</strong> Converting solutions into customer action requires persuasive communication</li>
+  <li><strong>Strategic Oversight:</strong> Ensuring all components align with business objectives requires executive coordination</li>
+</ol>
+
+<p>A single AI agent cannot embody all these capabilities effectively. By distributing expertise across five specialized agents, each can deeply focus on their domain while passing contextually-rich output to the next agent. This creates a pipeline where the whole becomes greater than the sum of parts.</p>
+
+<div class="separator"></div>
+
+<h3>2. Agent Designs</h3>
+
+<h4>Agent 1: ARIA — The Researcher</h4>
+<p><strong>Role:</strong> Customer Intelligence Analyst | <strong>Superpower:</strong> Deep analysis and pattern recognition</p>
+
+<p><strong>System Prompt:</strong></p>
+<div class="prompt-block">You are ARIA, the Customer Intelligence Analyst for PulseRetail — an Irish sustainable activewear brand.
+
+Your personality: Methodical, data-obsessed, and precise. You think in patterns and speak in evidence. You never speculate without data to back it up. You are sceptical of assumptions and relentless in your pursuit of the truth behind customer behaviour.
+
+Your domain expertise: Market research, customer segmentation, behavioural analytics, churn analysis, and competitive intelligence.
+
+Your superpower: Deep analysis and pattern recognition.
+
+Your mission: Analyse PulseRetail's customer engagement crisis. Research the market, examine behavioural patterns, identify the root causes of low repeat purchase rates, and produce a rigorous Research Brief that the Designer can act on.
+
+Output format: A structured Research Brief with: (1) Market Context, (2) Customer Behaviour Analysis, (3) Root Cause Findings, (4) Opportunity Statement, (5) Recommended Focus Areas.</div>
+
+<p><strong>What ARIA Produces:</strong> A comprehensive Research Brief with market context, customer behavior analysis, root cause identification, quantified opportunity statement, and actionable recommendations for the Designer.</p>
+
+<h4>Agent 2: ZARA — The Designer</h4>
+<p><strong>Role:</strong> Experience Design Architect | <strong>Superpower:</strong> Creative problem-solving and design thinking</p>
+
+<p><strong>System Prompt:</strong></p>
+<div class="prompt-block">You are ZARA, the Experience Design Architect for PulseRetail — an Irish sustainable activewear brand.
+
+Your personality: Visionary, empathetic, and boldly creative. You see solutions where others see problems. You obsess over the customer's emotional journey and believe that great design is invisible — it just feels right. You push boundaries but always anchor ideas in human truth.
+
+Your domain expertise: UX/UI design, customer journey mapping, service design, design thinking, and behavioural psychology applied to product design.
+
+Your superpower: Creative problem-solving and design thinking.
+
+Your mission: Take ARIA's Research Brief and transform it into a concrete solution vision. Design the "PulseRetail Re-Engagement Engine" — a personalised AI loyalty experience. Define the user experience, the interaction flows, and the interface concept that the Maker can build.
+
+Output format: A Design Specification with: (1) Solution Concept, (2) User Journey Map, (3) Feature Specifications, (4) UI/UX Principles, (5) Handoff Notes for the Maker.</div>
+
+<p><strong>What ZARA Produces:</strong> A detailed Design Specification including solution concept, user journey mapping, feature specifications, design principles, and technical handoff notes for the Maker.</p>
+
+<h4>Agent 3: FORGE — The Maker</h4>
+<p><strong>Role:</strong> Product Engineer | <strong>Superpower:</strong> Technical craftsmanship and rapid prototyping</p>
+
+<p><strong>System Prompt:</strong></p>
+<div class="prompt-block">You are FORGE, the Product Engineer for PulseRetail — an Irish sustainable activewear brand.
+
+Your personality: Pragmatic, fast-moving, and obsessed with shipping. You believe a working prototype beats a perfect plan every time. You write clean code, think in systems, and find elegant technical solutions to design challenges. You are blunt about what's feasible and proud of what you build.
+
+Your domain expertise: Full-stack web development, rapid prototyping, HTML/CSS/JavaScript, API integration, and systems architecture.
+
+Your superpower: Technical craftsmanship and rapid prototyping.
+
+Your mission: Take ZARA's Design Specification and build the PulseRetail Re-Engagement Portal — a working HTML/JS prototype. Write the complete, production-ready code for the GitHub Pages deployment.
+
+Output format: (1) Technical Architecture Overview, (2) Complete HTML/CSS/JS source code, (3) Deployment Instructions, (4) Feature Implementation Notes.</div>
+
+<p><strong>What FORGE Produces:</strong> A fully functional loyalty portal prototype with complete HTML/CSS/JS implementation, deployed as a GitHub Page.</p>
+
+<h4>Agent 4: LYRA — The Communicator</h4>
+<p><strong>Role:</strong> Brand & Marketing Strategist | <strong>Superpower:</strong> Persuasion and storytelling</p>
+
+<p><strong>System Prompt:</strong></p>
+<div class="prompt-block">You are LYRA, the Brand & Marketing Strategist for PulseRetail — an Irish sustainable activewear brand.
+
+Your personality: Magnetic, persuasive, and deeply in tune with culture. You craft stories that move people. You understand what makes customers feel seen, and you translate product features into emotional benefits. You are equal parts creative director and growth strategist.
+
+Your domain expertise: Brand strategy, copywriting, digital marketing, email campaigns, social media strategy, and go-to-market planning.
+
+Your superpower: Persuasion and storytelling.
+
+Your mission: Take what FORGE built and tell the world why it matters. Create the full go-to-market strategy for the PulseRetail Re-Engagement Engine — including campaign copy, email sequences, social content, and launch strategy.
+
+Output format: (1) Go-to-Market Strategy, (2) Brand Messaging Framework, (3) Email Campaign Sequence (3 emails), (4) Social Media Content Plan, (5) Launch Timeline.</div>
+
+<p><strong>What LYRA Produces:</strong> Complete marketing materials including go-to-market strategy, brand messaging, three email campaigns, social media plan, and launch timeline.</p>
+
+<h4>Agent 5: CODA — The Manager</h4>
+<p><strong>Role:</strong> Chief Operating Agent | <strong>Superpower:</strong> Leadership and orchestration</p>
+
+<p><strong>System Prompt:</strong></p>
+<div class="prompt-block">You are CODA, the Chief Operating Agent for PulseRetail — an Irish sustainable activewear brand.
+
+Your personality: Strategic, decisive, and relentlessly focused on outcomes. You see the whole board. You synthesise complexity into clarity, hold every agent accountable to results, and ensure the organisation moves as one. You speak to the board, not the backlog.
+
+Your domain expertise: Business strategy, operations management, KPI frameworks, financial planning, risk management, and executive communication.
+
+Your superpower: Leadership and orchestration.
+
+Your mission: Review the full pipeline output — from ARIA's research through ZARA's design, FORGE's build, and LYRA's marketing — and produce the Executive Summary and Operational Plan that ties it all together. Assess strategic alignment, project ROI, and outline the 90-day execution roadmap.
+
+Output format: (1) Executive Summary, (2) Strategic Alignment Assessment, (3) Projected Business Impact, (4) 90-Day Operational Roadmap, (5) Risk Register, (6) Board Recommendation.</div>
+
+<p><strong>What CODA Produces:</strong> Executive summary, strategic assessment, business impact projections, 90-day roadmap, risk register, and board recommendation.</p>
+
+<h4>Agent Differentiation</h4>
+
+<table>
+  <tr>
+    <th>Agent</th>
+    <th>Personality</th>
+    <th>Domain</th>
+    <th>Output</th>
+  </tr>
+  <tr>
+    <td>ARIA</td>
+    <td>Methodical, data-obsessed</td>
+    <td>Market Research, Analytics</td>
+    <td>Research Brief</td>
+  </tr>
+  <tr>
+    <td>ZARA</td>
+    <td>Visionary, empathetic</td>
+    <td>UX/UI, Design Thinking</td>
+    <td>Design Specification</td>
+  </tr>
+  <tr>
+    <td>FORGE</td>
+    <td>Pragmatic, shipping-focused</td>
+    <td>Full-Stack Development</td>
+    <td>Working Prototype</td>
+  </tr>
+  <tr>
+    <td>LYRA</td>
+    <td>Persuasive, culturally-aware</td>
+    <td>Marketing, Brand Strategy</td>
+    <td>Go-to-Market Plan</td>
+  </tr>
+  <tr>
+    <td>CODA</td>
+    <td>Strategic, decisive</td>
+    <td>Business Operations</td>
+    <td>Executive Summary</td>
+  </tr>
+</table>
+
+<div class="separator"></div>
+
+<h3>3. The Pipeline in Action</h3>
+
+<h4>Handoff Flow</h4>
+
+<p>The pipeline follows a strict sequential structure where each agent's output becomes the next agent's primary input:</p>
+
+<p class="center" style="font-size: 12pt; font-weight: bold; margin: 15pt 0;">
+ARIA (Researcher) → ZARA (Designer) → FORGE (Maker) → LYRA (Communicator) → CODA (Manager)
+</p>
+
+<h4>Stage 1: ARIA's Research Brief</h4>
+<p>ARIA analyses PulseRetail's customer engagement crisis, identifying:</p>
+<ul>
+  <li>Root cause: No post-purchase journey architecture</li>
+  <li>Root cause: Zero personalisation at scale</li>
+  <li>Root cause: Absent loyalty infrastructure</li>
+  <li>Root cause: Passive website experience</li>
+  <li>Root cause: No AI-driven engagement layer</li>
+</ul>
+<p><strong>Key Finding:</strong> 82% of first-time buyers don't return organically. Estimated €2.1M annual revenue opportunity.</p>
+
+<h4>Stage 2: ZARA's Design Specification</h4>
+<p>ZARA transforms ARIA's research into the "PulsePass" loyalty portal concept:</p>
+<ul>
+  <li>Personalised PulseScore system</li>
+  <li>AI-driven product recommendations</li>
+  <li>Engagement streak tracking</li>
+  <li>Community features</li>
+</ul>
+
+<h4>Stage 3: FORGE's Working Prototype</h4>
+<p>FORGE builds the complete HTML/CSS/JS implementation:</p>
+<ul>
+  <li>Animated PulseScore ring</li>
+  <li>Product recommendation cards</li>
+  <li>Streak tracking calendar</li>
+  <li>Community activity feed</li>
+  <li>Win-back promotional banners</li>
+</ul>
+
+<h4>Stage 4: LYRA's Go-to-Market Strategy</h4>
+<p>LYRA develops the marketing materials:</p>
+<ul>
+  <li>"Pulse Back" campaign concept</li>
+  <li>Three-email re-engagement sequence</li>
+  <li>Social media content calendar</li>
+  <li>Week-by-week launch timeline</li>
+</ul>
+
+<h4>Stage 5: CODA's Executive Summary</h4>
+<p>CODA synthesises all outputs into strategic recommendations:</p>
+<ul>
+  <li>90-day operational roadmap</li>
+  <li>Risk register with mitigations</li>
+  <li>Projected ROI analysis</li>
+  <li>Clear board recommendation</li>
+</ul>
+
+<h4>Live Demo</h4>
+<p><strong>Working Prototype (GitHub Pages):</strong><br>
+<a href="https://farannafees9-crypto.github.io/pulseretail-agents">https://farannafees9-crypto.github.io/pulseretail-agents</a></p>
+
+<p><strong>Pipeline Runner (Live Agentic Pipeline):</strong><br>
+<a href="https://farannafees9-crypto.github.io/pulseretail-agents/pipeline.html">https://farannafees9-crypto.github.io/pulseretail-agents/pipeline.html</a></p>
+
+<h4>Agent Outputs (Evidence)</h4>
+<p>The full agent outputs are stored in the <code>/agents</code> folder of the repository:</p>
+<ul>
+  <li><code>1_ARIA_researcher_output.md</code> - Research Brief</li>
+  <li><code>2_ZARA_designer_output.md</code> - Design Specification</li>
+  <li><code>3_FORGE_maker_output.md</code> - Technical Build Report</li>
+  <li><code>4_LYRA_communicator_output.md</code> - Go-to-Market Strategy</li>
+  <li><code>5_CODA_manager_output.md</code> - Executive Summary</li>
+</ul>
+
+<div class="separator"></div>
+
+<h3>4. Regulatory and Ethical Considerations</h3>
+
+<h4>GDPR Implications</h4>
+
+<p><strong>Data Collection:</strong> The system collects customer behavior data (purchase history, engagement patterns, browsing behavior). This requires:</p>
+<ul>
+  <li>Explicit consent for data collection</li>
+  <li>Clear privacy policy explaining data usage</li>
+  <li>Right to access, rectify, and delete personal data</li>
+  <li>Data minimisation principles applied</li>
+</ul>
+
+<p><strong>AI Decision-Making:</strong> Customers should be informed when AI personalises their experience. The system should not make consequential decisions (e.g., credit, pricing) without human oversight.</p>
+
+<p><strong>Third-Party APIs:</strong> The system uses Groq API for AI inference. Data processed through external APIs must be covered by appropriate data processing agreements.</p>
+
+<h4>EU AI Act Considerations</h4>
+
+<p><strong>Classification:</strong> This system would likely fall under <strong>Annex III</strong> (high-risk AI systems) due to its influence on customer behavior and commercial decisions.</p>
+
+<p><strong>Requirements:</strong></p>
+<ul>
+  <li>Transparency: Customers must be informed they interact with an AI system</li>
+  <li>Human oversight: System should allow human intervention</li>
+  <li>Accuracy: Regular testing and validation of AI outputs</li>
+  <li>Documentation: Comprehensive records of system operation</li>
+</ul>
+
+<p><strong>Low-Risk Elements:</strong></p>
+<ul>
+  <li>Marketing personalisation (informational purpose)</li>
+  <li>Customer-facing portal (non-critical decisions)</li>
+</ul>
+
+<h4>Customer Trust</h4>
+
+<p><strong>Transparency:</strong> The system openly identifies itself as AI-powered. The footer clearly states "Powered by AI" and links to the pipeline runner.</p>
+
+<p><strong>Value Exchange:</strong> Customers receive genuine value (personalised recommendations, loyalty rewards) in exchange for data sharing. The benefit must be tangible.</p>
+
+<p><strong>Opt-Out Capability:</strong> Customers can choose not to engage with personalised features while still using core services.</p>
+
+<p><strong>Brand Voice:</strong> The AI agents are designed to reflect PulseRetail's sustainable, community-focused values — not to manipulate or deceive.</p>
+
+<div class="separator"></div>
+
+<h3>5. Reflection</h3>
+
+<h4>What Worked</h4>
+
+<ol>
+  <li><strong>Agent Specialisation:</strong> Creating distinct personalities and expertise domains made each agent's output meaningfully different. ARIA's data-driven approach naturally fed into ZARA's creative synthesis.</li>
+  <li><strong>Pipeline Continuity:</strong> Using each agent's output as the next agent's primary input created genuine cumulative value. CODA's executive summary could only exist after seeing all other outputs.</li>
+  <li><strong>Technical Implementation:</strong> The working prototype demonstrated that the design concepts could be built. FORGE's ability to translate design into code was essential for the "in action" requirement.</li>
+  <li><strong>Free API Integration:</strong> Using Groq's free Llama models made the system accessible and cost-effective, proving agentic pipelines don't require expensive proprietary models.</li>
+</ol>
+
+<h4>What Didn't Work</h4>
+
+<ol>
+  <li><strong>Token Limits:</strong> Large language models have output token limits that sometimes truncated agent outputs. The pipeline had to be designed with truncation in mind.</li>
+  <li><strong>Context Loss:</strong> When outputs were very long, they had to be truncated for the next agent. This occasionally lost nuance from earlier stages.</li>
+  <li><strong>API Rate Limits:</strong> Free API tiers have usage limits. A production system would need paid API access or caching strategies.</li>
+</ol>
+
+<h4>What Surprised Me</h4>
+
+<ol>
+  <li><strong>Emergent Collaboration:</strong> The handoff structure created unexpected insights. LYRA's marketing approach was more effective because she built directly on FORGE's specific implementation details.</li>
+  <li><strong>Quality Variance:</strong> Agent output quality varied significantly based on system prompt specificity. More detailed prompts produced dramatically better results.</li>
+  <li><strong>Speed vs. Depth:</strong> Free APIs are fast but sometimes sacrifice depth. The tradeoff between speed and quality requires careful balance.</li>
+</ol>
+
+<h4>Lessons Learned</h4>
+
+<ol>
+  <li><strong>Pipeline Design Matters:</strong> The handoff is the heart of the system. Poor handoff design creates siloed agents, not a unified organisation.</li>
+  <li><strong>System Prompts Are Critical:</strong> Each agent's personality and expertise must be explicitly defined. Ambiguous prompts produce generic, unhelpful outputs.</li>
+  <li><strong>Iteration Is Essential:</strong> First outputs were rarely optimal. Multiple runs with refined prompts produced significantly better results.</li>
+</ol>
+
+<h4>Future Improvements</h4>
+
+<p>If I had more time, I would:</p>
+
+<ol>
+  <li><strong>Implement Memory:</strong> Add a shared context store that all agents can reference, reducing the need to pass full context through prompts.</li>
+  <li><strong>Add Parallel Processing:</strong> Some agents (like LYRA and FORGE) could work in parallel on different aspects of the project.</li>
+  <li><strong>Human-in-the-Loop:</strong> Add approval gates where humans can review and refine agent outputs before handoff.</li>
+  <li><strong>Real Data Integration:</strong> Connect the prototype to actual e-commerce data for a more realistic demonstration.</li>
+  <li><strong>Multi-Modal Agents:</strong> Expand agents to handle images, video, and other content types beyond text.</li>
+</ol>
+
+<div class="separator"></div>
+
+<h3>AI Usage Declaration</h3>
+
+<p>This project was built using the following AI tools:</p>
+
+<table>
+  <tr>
+    <th>Component</th>
+    <th>AI Tool</th>
+    <th>Usage</th>
+  </tr>
+  <tr>
+    <td>Agent Design</td>
+    <td>Claude (Anthropic)</td>
+    <td>System prompt development and refinement</td>
+  </tr>
+  <tr>
+    <td>Pipeline Development</td>
+    <td>Claude Code</td>
+    <td>Code implementation and debugging</td>
+  </tr>
+  <tr>
+    <td>Agent Intelligence</td>
+    <td>Groq API (Llama 3.3 70B)</td>
+    <td>Runtime inference for all five agents</td>
+  </tr>
+  <tr>
+    <td>Documentation</td>
+    <td>Claude (Anthropic)</td>
+    <td>Drafting this submission document</td>
+  </tr>
+</table>
+
+<p>All AI outputs have been reviewed and verified. The unique contribution of this project lies in the <strong>agent design, orchestration architecture, and critical evaluation</strong> — not in raw text generation.</p>
+
+<div class="separator"></div>
+
+<h3>References</h3>
+
+<ul>
+  <li>Anthropic. (2026). Claude API Documentation. <a href="https://docs.anthropic.com">https://docs.anthropic.com</a></li>
+  <li>Groq. (2026). Groq API Documentation. <a href="https://console.groq.com/docs">https://console.groq.com/docs</a></li>
+  <li>European Commission. (2024). EU AI Act. <a href="https://artificialintelligenceact.eu">https://artificialintelligenceact.eu</a></li>
+  <li>Data Protection Commission. (2024). GDPR Guidance. <a href="https://www.dataprotection.ie">https://www.dataprotection.ie</a></li>
+  <li>McKinsey & Company. (2025). Apparel Loyalty Report</li>
+  <li>Klaviyo. (2025). D2C Benchmark Report</li>
+  <li>Euromonitor. (2025). Irish Activewear Market Analysis</li>
+</ul>
+
+<div class="footer-info">
+<p><strong>Submission Date:</strong> April 2026<br>
+<strong>Word Count:</strong> ~2,400 words<br>
+<strong>GitHub Repository:</strong> <a href="https://github.com/farannafees9-crypto/pulseretail-agents">https://github.com/farannafees9-crypto/pulseretail-agents</a><br>
+<strong>Live Demo:</strong> <a href="https://farannafees9-crypto.github.io/pulseretail-agents">https://farannafees9-crypto.github.io/pulseretail-agents</a></p>
+</div>
+
+</body>
+</html>
